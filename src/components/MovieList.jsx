@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import MovieCard from './MovieCard';
 
-export default class MovieList extends Component {
+class MovieList extends Component {
   render() {
     return (
       <div>
-        <MovieCard />
+        {movies.map((movie) => (
+          <MovieCard key={ movie.title } />
+        ))}
       </div>
     );
   }
 }
+
+export default MovieList;
