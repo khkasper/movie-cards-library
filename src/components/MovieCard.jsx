@@ -7,7 +7,7 @@ class MovieCard extends Component {
     } = this.props;
     return (
       <div>
-        
+        <img src={ imagePath } alt={ title } />
       </div>
     );
   }
